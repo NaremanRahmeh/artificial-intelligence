@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>إضافة تطبيق - تطبيقات الذكاء الاصطناعي</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="aboutUs.html">من نحن</a></li>
+      <li><a href="apps.html">التطبيقات</a></li>
+      <li><a href="app_add.html" class="active">إضافة تطبيق</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <h1>إضافة تطبيق جديد</h1>
+  <form id="appForm">
+    <label>اسم التطبيق (إنجليزي فقط، دون فراغات):</label>
+    <input type="text" id="appName" required />
+
+    <label>اسم الشركة المطورة (إنجليزي فقط):</label>
+    <input type="text" id="company" required />
+
+    <label>الموقع الإلكتروني:</label>
+    <input type="url" id="url" required />
+
+    <label>مجاني؟</label>
+    <label><input type="radio" name="free" value="نعم" checked /> نعم</label>
+    <label><input type="radio" name="free" value="لا" /> لا</label>
+
+    <label>مجال الاستخدام:</label>
+    <select id="domain" required>
+      <option value="">-- اختر --</option>
+      <option value="Robotics">Robotics</option>
+      <option value="Education">Education</option>
+      <option value="E-Commerce">E-Commerce</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>شرح مختصر:</label>
+    <textarea id="desc" rows="3" required></textarea>
+
+    <div class="actions">
+      <button type="submit" class="btn">إرسال</button>
+      <button type="reset" class="btn secondary">إعادة</button>
+    </div>
+  </form>
+</main>
+
+<footer>© 2025 - تطبيقات الذكاء الاصطناعي</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="myFunctions.js"></script>
+</body>
+</html>
